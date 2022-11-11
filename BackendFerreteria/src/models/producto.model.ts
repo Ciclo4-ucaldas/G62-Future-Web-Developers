@@ -27,6 +27,10 @@ export class Producto extends Entity {
   })
   imagen: string;
 
+  @property({
+    type: 'string',
+  })
+  pedidoId?: string;
 
   constructor(data?: Partial<Producto>) {
     super(data);
