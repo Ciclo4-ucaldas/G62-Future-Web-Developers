@@ -1,8 +1,9 @@
 import {Entity, model, property, hasMany} from '@loopback/repository';
 import {Pedido} from './pedido.model';
+import { Usuario } from './usuario.model';
 
 @model()
-export class Cliente extends Entity {
+export class Cliente extends Usuario {
   @property({
     type: 'string',
     id: true,
